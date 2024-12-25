@@ -29,6 +29,7 @@ public class ChoseWord {
         char[] mask = new char[word.length];
         Arrays.fill(mask, '*');
         this.mask = mask;
+        scanner.close();
     }
 
     public char[] getWord() {
