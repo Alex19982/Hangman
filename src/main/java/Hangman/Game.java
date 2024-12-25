@@ -16,7 +16,8 @@ public class Game {
             System.out.println("[S]tart new game or [E]xit");
             counter=0;
             lock=true;
-            if (scanner.nextLine().charAt(0) == 'S') {
+            char choice=scanner.nextLine().charAt(0);
+            if (choice == 'S') {
                 ChoseWord choseWord=new ChoseWord();
                 choseWord.word();
                 Draw draw=new Draw(counter,lock, choseWord.getWord());
@@ -56,6 +57,8 @@ public class Game {
                     }
                 }
             }
+            else if (choice == 'E'){
+                break;
         }
     }
 }
