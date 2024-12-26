@@ -7,17 +7,15 @@ import java.util.Scanner;
 
 public class Game {
     private static boolean lock = true;
-    private static int counter;
-    private static int rightLetters;
     private static Scanner scanner = new Scanner(System.in);
 
     public static void game() {
         while (true) {
             System.out.println("[S]tart new game or [E]xit");
-            counter=0;
+            int counter=0;
             lock=true;
             char choice=scanner.nextLine().charAt(0);
-            rightLetters=0;
+            int rightLetters=0;
             if (choice == 'S') {
                 ChoseWord choseWord=new ChoseWord();
                 choseWord.word();
