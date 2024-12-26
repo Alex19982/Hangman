@@ -17,6 +17,7 @@ public class Game {
             counter=0;
             lock=true;
             char choice=scanner.nextLine().charAt(0);
+            rightLetters=0;
             if (choice == 'S') {
                 ChoseWord choseWord=new ChoseWord();
                 choseWord.word();
